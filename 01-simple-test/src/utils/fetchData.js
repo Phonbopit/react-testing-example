@@ -13,7 +13,7 @@ const names = [
 ]
 
 export const getName = async (id) => {
-  await delay(1000)
+  await delay(200)
 
   return names.find((name) => name.id === id)
 }

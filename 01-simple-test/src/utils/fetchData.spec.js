@@ -21,3 +21,13 @@ describe('#getName', () => {
     expect(result).toBeUndefined()
   })
 })
+
+describe('Bad name', () => {
+  it('should work', async () => {
+    expect(await getName(9999)).toBeUndefined()
+  })
+
+  it('return undefined', async () => {
+    expect(await getName(9999)).toBeUndefined()
+  })
+})
